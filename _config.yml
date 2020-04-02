@@ -1,4 +1,5 @@
 # theme: jekyll-theme-cayman
 title: false
+title-heading: false
 github:
   is_project_page: false
