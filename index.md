@@ -1,37 +1,264 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #fff;
+        }
+        .banner img{
+            width: 100%;
+        }
+        img{
+            vertical-align: bottom;
+        }
+        .footer{
+            color: #aaa;
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .group{
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .item img{
+            width: 100%;
+        }
+        .item{
+            margin: 0px 10px 20px;
+        }
+        .about{
+            background-color: #ccc;
+        }
+        .about h2{
+            text-align: center;
+            font-size: 46px;
+        }
+        .about p{
+            text-align: center;
+            padding: 0px 50px 10px;
+        }
+        .item h3{
+            font-size: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            .row{
+                display: flex;
+            }
+        }
 
-You can use the [editor on GitHub](https://github.com/alex022820/work/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        .header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        #menu_control{
+            position: absolute;
+            opacity: 0;
+        }
+        .logo{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .logo img{
+            display: block;
+        }
+        .menu_btn{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position:absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .menu_btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .menu_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                        0px -8px 0px #aaa;
+        }
+        nav{
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color: #a6e22c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22c;
+            background-color: #282923;
+        }
+        nav a:hover{
+                background-color: chocolate;
+            }
+        #menu_control:checked ~ .header nav{
+            left: 0;
+        }
+        .changepage{
+            display: inline block;
+        }
 
-```markdown
-Syntax highlighted code block
+        @media screen and (min-width:768px){
+            .menu_btn{
+                display: none;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: #282923;
+                align-items: center;
+            }
+            nav{
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+            }
+            nav a{
+                border-bottom: none;
+                background-color: #282923;
+                transition: .5s;
+            }
+            nav a:hover{
+                background-color: chocolate;
+            }
+        }
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+    </style>
 
-**Bold** and _Italic_ and `Code` text
+</head>
+<body>
 
-[Link](url) and ![Image](src)
-```
+    <input type="checkbox" name="" id="menu_control">
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alex022820/work/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="https://lh3.googleusercontent.com/proxy/lSS4RZqPH1PWfemtzAAazKnxRj2m_W3aTzshFlyOhy55FpY_eMQfap8BF88cju6pSsFAMCMPFUJApk7xLS7Vl-D5RNKoEbWmbP_1jUYmYw" width="60" height="40" ></a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+    
+    <div class="group">
+        <div class="banner">
+            <img src="https://picsum.photos/1400/500?random=1">
+        </div>
+    </div>
+
+
+
+    <div class="about">
+        <h2>關於我們</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nihil veniam nemo labore eos et aut, minus iure beatae molestiae delectus officia, enim quasi deserunt sed at, consequuntur adipisci aspernatur cum laudantium ipsum eum quod! Iste dolore doloribus cupiditate facilis.</p>
+    </div>
+
+
+    <div class="group">
+        <div class="row">
+            <div class="item">
+                <img src="https://picsum.photos/300/200?random=1">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit delectus architecto eaque explicabo ea excepturi nisi odit quas dicta? Quam voluptatum ea hic commodi nemo voluptatem debitis, sapiente illum.</p>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/200?random=2">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit delectus architecto eaque explicabo ea excepturi nisi odit quas dicta? Quam voluptatum ea hic commodi nemo voluptatem debitis, sapiente illum.</p>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/200?random=3">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit delectus architecto eaque explicabo ea excepturi nisi odit quas dicta? Quam voluptatum ea hic commodi nemo voluptatem debitis, sapiente illum.</p>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/200?random=4">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur reprehenderit delectus architecto eaque explicabo ea excepturi nisi odit quas dicta? Quam voluptatum ea hic commodi nemo voluptatem debitis, sapiente illum.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="group">
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=5">
+            <h3>title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste illum laudantium quam expedita in! Maiores saepe ducimus earum aperiam incidunt deserunt nobis id? Nemo odio pariatur eveniet aliquam dolor. Voluptas impedit voluptatum laudantium quibusdam culpa totam fuga magni illum reiciendis.</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=6">
+            <h3>title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste illum laudantium quam expedita in! Maiores saepe ducimus earum aperiam incidunt deserunt nobis id? Nemo odio pariatur eveniet aliquam dolor. Voluptas impedit voluptatum laudantium quibusdam culpa totam fuga magni illum reiciendis.</p>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/200?random=7">
+            <h3>title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste illum laudantium quam expedita in! Maiores saepe ducimus earum aperiam incidunt deserunt nobis id? Nemo odio pariatur eveniet aliquam dolor. Voluptas impedit voluptatum laudantium quibusdam culpa totam fuga magni illum reiciendis.</p>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        &copy; copyright 2020 by 406262498
+    </div>    
+
+
+
+
+</body>
+</html>
