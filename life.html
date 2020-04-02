@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #fff;
+        }
+        .banner img{
+            width: 100%;
+        }
+        img{
+            vertical-align: bottom;
+        }
+        .footer{
+            color: #aaa;
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .group{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .group .item{
+            display: flex;
+            margin: 20px;
+        }
+        .text{
+            display: flex;
+            margin: 20px 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+        }
+        .about{
+            background-color: #ccc;
+        }
+        .about h2{
+            text-align: center;
+            font-size: 46px;
+        }
+        .about p{
+            text-align: center;
+            padding: 0px 50px 10px;
+        }
+        .item h3{
+            font-size: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            .row{
+                display: flex;
+            }
+        }
+
+
+
+
+        .header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        #menu_control{
+            position: absolute;
+            opacity: 0;
+        }
+        .logo{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .logo img{
+            display: block;
+        }
+        .menu_btn{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position:absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .menu_btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .menu_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                        0px -8px 0px #aaa;
+        }
+        nav{
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color: #a6e22c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22c;
+            background-color: #282923;
+        }
+        nav a:hover{
+                background-color: chocolate;
+            }
+        #menu_control:checked ~ .header nav{
+            left: 0;
+        }
+        .changepage{
+            display: inline block;
+        }
+
+        @media screen and (min-width:768px){
+            .menu_btn{
+                display: none;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: #282923;
+                align-items: center;
+            }
+            nav{
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+            }
+            nav a{
+                border-bottom: none;
+                background-color: #282923;
+                transition: .5s;
+            }
+            nav a:hover{
+                background-color: chocolate;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <input type="checkbox" name="" id="menu_control">
+
+
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="https://picsum.photos/60/40?random=1" width="60" height="40" ></a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="group">
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E9%80%A3%E5%81%87%E9%A6%96%E6%97%A5%E8%BB%8A%E6%B5%81%E8%BC%83%E5%8E%BB%E5%B9%B4%E5%B0%91+%E9%80%B1%E4%BA%945%E8%B7%AF%E6%AE%B5%E4%BB%8D%E5%A1%9E-VrQZM2">
+            <img src="https://obs.line-scdn.net/0h8Z-Wl-27Z3UQLk-X3AQYIip4ZBojQnR2dBg2dlNAOUFpFyRxLE59QDx6OkFoFiArfkAsEDAvfERuTCB3JU99/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>連假首日車流較去年少 週五5路段仍塞</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E5%85%A8%E5%8F%B0%E7%A6%81%E6%8E%A2%E7%97%85%EF%BC%81%E5%91%B3%E5%97%85%E8%A6%BA%E7%95%B0%E5%B8%B8%E5%88%97%E5%85%A5%E7%AF%A9%E6%AA%A2%E7%AF%84%E5%9C%8D-eM73Ex">
+            <img src="https://obs.line-scdn.net/0hxknp23GMJ0RTCQ-mg_ZYE2lfJCtgZTRHNz92RxBneXAqMGRHOj9hcX8LfnJ8amAaPT1qIH4KPHUta2MTamdh/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>全台禁探病！味嗅覺異常列入篩檢範圍</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E5%B1%B1%E7%BE%8C%E9%80%9B%E5%A4%A7%E8%A1%97+%E8%81%BD%E5%88%B0%E6%B1%BD%E7%AC%9B%E8%81%B2%E7%AB%9F%E8%B7%91%E7%B5%A6%E5%B0%8F%E7%81%AB%E8%BB%8A%E8%BF%BD-1E3Gp2">
+            <img src="https://obs.line-scdn.net/0h0rrIRtu1b11PMEe_qw4QCnVmbDJ8XHxeKwY-XgxeMWk2CSxfe1EoaGNjNjhgVCgDIQQmMm04dGwxUisLclIo/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>山羌逛大街 聽到汽笛聲竟跑給小火車追</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E8%A8%88%E7%A8%8B%E8%BB%8A%E9%81%8A%E8%A6%BD%E8%BB%8A%E9%A7%95%E9%A7%9B%E8%A3%9C%E5%8A%A9%E5%AE%9A%E6%A1%88+%E6%AF%8F%E6%9C%881%E8%90%AC-QJmoep">
+            <img src="https://obs.line-scdn.net/0hXRF12SV2B317SC-fB914KkEeBBJIJBR-H35WfjgmWUkCcUQtR3xLE1hBCkpVfkAjFXxAE1dPHEwFKkAjTn1L/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>計程車遊覽車駕駛補助定案 每月1萬</h3>
+            </div>
+            </a>
+        </div>
+    </div>
+
+
+    
+
+    <div class="footer">
+        &copy; copyright 2020 by 406262498
+    </div>    
+
+
+
+
+</body>
+</html>

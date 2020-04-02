@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #fff;
+        }
+        .banner img{
+            width: 100%;
+        }
+        img{
+            vertical-align: bottom;
+        }
+        .footer{
+            color: #aaa;
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0px;
+        }
+        .group{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .group .item{
+            display: flex;
+            margin: 20px;
+        }
+        .text{
+            display: flex;
+            margin: 20px 20px;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+        }
+        .about{
+            background-color: #ccc;
+        }
+        .about h2{
+            text-align: center;
+            font-size: 46px;
+        }
+        .about p{
+            text-align: center;
+            padding: 0px 50px 10px;
+        }
+        .item h3{
+            font-size: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            .row{
+                display: flex;
+            }
+        }
+
+
+
+
+        .header{
+            height: 50px;
+            background-color: #ccc;
+            position: relative;
+        }
+        #menu_control{
+            position: absolute;
+            opacity: 0;
+        }
+        .logo{
+            width: 60px;
+            height: 40px;
+            margin-left: 10px;
+        }
+        .logo img{
+            display: block;
+        }
+        .menu_btn{
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: block;
+            position:absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .menu_btn span{
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+            display: block;
+            overflow: hidden;
+        }
+        .menu_btn::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            left: 2px;
+            width: 36px;
+            background-color: #aaa;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            box-shadow: 0px 8px 0px #aaa,
+                        0px -8px 0px #aaa;
+        }
+        nav{
+            width: 80%;
+            height: calc(100vh - 50px);
+            background-color: #282923;
+            position: absolute;
+            top: 50px;
+            left: -100%;
+            transition: .5s;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            color: #a6e22c;
+            padding: 10px 20px;
+            border-bottom: 1px solid #a6e22c;
+            background-color: #282923;
+        }
+        nav a:hover{
+                background-color: chocolate;
+            }
+        #menu_control:checked ~ .header nav{
+            left: 0;
+        }
+        .changepage{
+            display: inline block;
+        }
+
+        @media screen and (min-width:768px){
+            .menu_btn{
+                display: none;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+                background-color: #282923;
+                align-items: center;
+            }
+            nav{
+                position: relative;
+                left: 0;
+                display: flex;
+                width: auto;
+                height: auto;
+                top: 0;
+            }
+            nav a{
+                border-bottom: none;
+                background-color: #282923;
+                transition: .5s;
+            }
+            nav a:hover{
+                background-color: chocolate;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <input type="checkbox" name="" id="menu_control">
+
+
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="https://picsum.photos/60/40?random=1" width="60" height="40" ></a>
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="group">
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E9%98%B2%E7%96%AB%E5%86%8D%E5%8D%87%E7%B4%9A+%E9%86%AB%E9%99%A2%E6%A9%9F%E6%A7%8B%E5%85%A8%E9%9D%A2%E7%A6%81%E6%AD%A2%E6%8E%A2%E7%97%85-xPe7eP">
+            <img src="https://obs.line-scdn.net/0hP1Y2guJ_Dx5kSyf8zEZwSV4dDHFXJxwdAH1eHSclUSodckwYXCkQK0hNUC4cK0hACnpIcUNKFC8aKUgaCigQ/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>防疫再升級 醫院機構全面禁止探病</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E5%B0%8D%E5%85%A8%E7%90%83%E7%96%AB%E6%83%85%E4%B8%8D%E6%A8%82%E8%A7%80%EF%BC%81%E9%99%B8%E5%90%8D%E9%86%AB%E6%9B%9D3%E5%A4%A7%E9%9A%B1%E6%86%82-jQkkKz">
+            <img src="https://obs.line-scdn.net/0h3-KGmWMHbAJ2PkTg2GITVUxob21FUn8BEgg9ATVQMjYPBy8ESFlwN1o3NzRfDStcGAojZlo3dzMIXCsGQg9w/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>對全球疫情不樂觀！陸名醫曝3大隱憂</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E6%96%B0%E5%A2%9E10%E4%BE%8B%E7%A2%BA%E8%A8%BA+8%E4%BE%8B%E5%A2%83%E5%A4%96%E7%A7%BB%E5%85%A5%E3%80%812%E4%BE%8B%E6%9C%AC%E5%9C%9F-3lDOYW">
+            <img src="https://obs.line-scdn.net/0hbraAwEefPV1cOBW_1ypCCmZuPjJvVC5eOA5sXh9WY2klAX4CZ1t2bH49ZWkhCnoDNFt2OHk_JmwiWnpbNVx2/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>新增10例確診 8例境外移入、2例本土</h3>
+            </div>
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://today.line.me/tw/pc/article/%E5%B1%85%E5%AE%B6%E6%AA%A2%E7%96%AB%E6%8F%AD%E5%AF%86+%E9%87%8C%E5%B9%B9%E4%BA%8B%E8%B7%91%E8%85%BF%E7%B4%AF%E6%85%98%E3%80%8C%E5%86%8D%E6%9A%B4%E5%A2%9E%E6%92%90%E4%B8%8D%E4%BD%8F%E3%80%8D-prmOmq">
+            <img src="https://obs.line-scdn.net/0hbnfoe2m_PUFbFhWj8xVCFmFAPi5oei5CPyBsQhh4Y3UiL35HY3R3dHcQNCR0JnofNSNwJ3seJnAldHpFNXV3/w644" width="252px" height="148px">
+            <div class="text">
+                <h3>居家檢疫揭密 里幹事跑腿累慘「再暴增撐不住」</h3>
+            </div>
+            </a>
+        </div>
+    </div>
+
+
+    
+
+    <div class="footer">
+        &copy; copyright 2020 by 406262498
+    </div>    
+
+
+
+
+</body>
+</html>
